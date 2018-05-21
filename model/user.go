@@ -22,7 +22,6 @@ func (u *User) GetUser(uid int64) (usr User, err error) {
 	val, err := client.Get("user:" + string(uid)).Result()
 	if err != nil {
 		log.Println("GetUser from cache error:", val, err)
-		//return users, err
 	}
 
 	dbw := NewDb()
