@@ -1,0 +1,58 @@
+.add{
+    margin-top: 40px;
+}
+.add .textarea{
+    box-sizing: border-box;
+    height: 120px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid #DDD;
+    resize: none;
+}
+.add-img{
+
+}
+
+.add-img ul{
+    padding: 15px;
+    overflow: hidden;
+}
+.add-img ul li{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin:0 10px 10px 0;
+    position: relative;
+    border: 1px solid #999999;
+}
+.add-img ul li .delete-img{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: 20px;
+    background: #f00;
+    color: #fff;
+    border-radius: 50%;
+}
+.add-img ul li .delete-img .icon{
+    display: block;
+}
+.add-img ul li img{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:50%;
+    height: auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.add-img .add-photo{
+
+    display: inline-block;
+}
+.add-img .add-photo .icon{
+    padding: 10px;
+    font-size: 60px;
+    color: #999999;
+}

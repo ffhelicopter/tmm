@@ -1,0 +1,188 @@
+/*VIP*/
+
+.mod-ucenter-cleft dl {
+    background: #fbfbfb;
+}
+.mod-ucenter-dl {
+    border-top-width: 0;
+}
+
+.mod-ucenter-dl dt {
+    color: #333;
+    background: #f3f3f3;
+    height: 38px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding-left: 20px;
+    font-weight: 700;
+    line-height: 38px;
+    font-size: 14px;
+}
+
+dl {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.mod-ucenter-cleft li.changepwd a {
+    background-position: 16px 12px;
+}
+
+.mod-ucenter-cleft li a {
+    position: relative;
+    line-height: 50px;
+    float: left;
+    width: 204px;
+    padding-left: 44px;
+    border-bottom: 1px dotted #dcdcdc;
+    color: #666;
+    font-size: 12px;
+    background-image: url(passport.baidu.com/static/passpc-security/img/ucenter/ucenternav_bg.png);
+    background-image: -webkit-image-set(url(passport.baidu.com/static/passpc-security/img/ucenter/ucenternav_bg.png) 1x,url(passport.baidu.com/static/passpc-security/img/ucenter/ucenternav_bg@2x.png) 2x);
+    background-image: -moz-image-set(url(passport.baidu.com/static/passpc-security/img/ucenter/ucenternav_bg.png) 1x,url(passport.baidu.com/static/passpc-security/img/ucenter/ucenternav_bg@2x.png) 2x);
+    background-image: -o-image-set(url(passport.baidu.com/static/passpc-security/img/ucenter/ucenternav_bg.png) 1x,url(passport.baidu.com/static/passpc-security/img/ucenter/ucenternav_bg@2x.png) 2x);
+    background-image: -ms-image-set(url(passport.baidu.com/static/passpc-security/img/ucenter/ucenternav_bg.png) 1x,url(passport.baidu.com/static/passpc-security/img/ucenter/ucenternav_bg@2x.png) 2x);
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    color: #2b78e4;
+}
+
+
+/**/
+.add-main{
+    margin-top: 40px;
+    padding-top: 10px;
+}
+.add-main .info{
+    font-size: 14px;
+    line-height: 20px;
+	color: #666;
+}
+.add-btn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    line-height: 26px;
+	height:26px;
+    border-radius: 5px;
+	color:#FFF;
+    width:60px;
+    background: #000;
+    font-size: 14px;
+	text-align:center;
+}
+.upload-img{}
+.upload-btns input{
+    display: none;
+}
+.upload-btns label{
+    display: block;
+    text-align: center;
+    background: #fff;
+    margin: 0 10px;
+    border: 1px solid #dddddd;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 100px;
+    color: #ddd;
+
+}
+.preview{
+    background: #fff;
+}
+
+.preview li .upload-delete{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(255,0,0,.7);
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+}
+
+.option {
+    background: #fbfbfb;
+}
+
+.option .title{
+    padding-left: 15px;
+    height: 50px;
+    line-height:50px;
+    font-size: 16px;
+    color: #666;
+    border-top: 1px solid #dedfe0;
+}
+
+.add-main em{
+    font-size: 12px;
+    line-height: 16px;
+	color: #999;
+}
+
+.option-input {
+	position: relative;
+	top: 14px;
+	background: #ccc;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	margin-right: 2px;
+	z-index: 1000;
+}
+
+.option-input:hover {
+	background: #9faab7;
+}
+.option-input:checked {
+	background: #40e0d0;
+}
+
+
+
+.form-view{
+    background: #fff;
+    padding-left: 15px;
+    border-bottom: 1px solid #dedfe0;
+}
+.form-view .f-cell{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 1px solid #dedfe0;
+    line-height: 40px;
+    font-size: 16px;
+}
+.form-view .f-cell:last-child{
+  border-bottom: none;
+}
+.form-view .f-cell .cell-title{
+    width: 80px;
+}
+
+.form-view .f-cell .cell-text{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 16px;
+color: #9faab7;
+}
+.form-view .f-cell select.cell-text{
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+.form-view .f-cell select option{
+    line-height: 40px;
+}

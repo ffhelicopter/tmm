@@ -1,0 +1,96 @@
+.login{
+    margin-top: 40px;
+    padding:15px;
+}
+.login li.flex{
+    border-bottom: 1px solid #DDD;
+    padding: 10px 0;
+}
+.login li.flex .icon{
+    font-size: 20px;
+    color: #9f9f9f;
+}
+.login li.flex input{
+    line-height: 20px;
+    margin-left: 20px;
+}
+.login li.flex .code{
+    font-size: 14px;
+    color: #666;
+}
+.login li button{
+    margin-top: 40px;
+    width: 100%;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.login li p{
+    text-align: right;
+    padding: 20px 0;
+}
+.login li p a{
+    color: #666;
+    font-size: 12px;
+}
+.login .oauth{
+    padding: 30px 0;
+    text-align: center;
+}
+.login .oauth a{
+
+}
+.login .oauth a .icon{
+    border-radius: 50%;
+    padding: 10px;
+}
+.login .oauth a.qq .icon{
+    background: #008bc5;
+}
+.login .oauth a.weibo .icon{
+    background: #ffd648;
+}
+.login .oauth a.wechat .icon{
+    background: #02d30f;
+}
+.login .oauth a .icon{
+    color: #fff;
+    font-size: 30px;
+}
+
+.login .copyright{
+	display: inline-block;
+	text-decoration: none;
+	height: 20px;
+	line-height: 20px;
+	color: #cccccc;
+	font-size:12px;
+    text-align: center;
+}
+
+.login .copyright a{
+	color: #cccccc;
+}
+
+.login .copyright .bei{
+	display: inline-block;
+	margin: 10px;
+	color: #cccccc;
+	font-size:12px;
+}
+
+.login .copyright .gb{
+	display: inline-block;
+	margin: 10px;
+	color: #cccccc;
+	padding-left:18px;
+}
+
+.login .copyright .ag{
+	display: inline-block;
+	margin: 30px;
+	color: #cccccc;
+}

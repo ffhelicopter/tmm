@@ -1,0 +1,258 @@
+.main{
+    padding-bottom: 53px;
+}
+/*列表*/
+.recommend{
+    padding: 0 10px;
+}
+.recommend .item-title{
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.item-main .re-item{
+    border-bottom: 1px solid #DDD;
+    padding: 10px 0;
+}
+.item-main .re-item:last-of-type{
+    border-bottom: none;
+}
+.item-main .re-img{
+    max-height: 120px;
+}
+.item-main .re-img img{
+    width: auto;
+    height: auto;
+    max-height: 120px;
+    display: block;
+	border-radius: 4px;
+}
+.item-main .re-main{
+    padding:0 10px;
+
+}
+.item-main .re-main .re-header{
+    font-size: 16px;
+    line-height: 20px;
+}
+.item-main .re-main .re-info{
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+.item-main .re-main .re-info .price{
+    font-size: 16px;
+    line-height: 30px;
+	color: #fff;
+}
+.item-main .re-main .icon,
+.item-main .re-main .re-info .mate{
+    color: #6bdfc2;
+}
+/*课堂*/
+.course{
+    padding: 0 10px;
+}
+.course-item{
+    border-bottom: 5px solid #fafafa;
+    padding: 10px 0;
+}
+.course-item .co-img{
+    width: 120px;
+    height: 180px;
+}
+.course-item .co-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.course-item .co-main{
+    padding:0 10px;
+
+}
+.course-item .co-main .co-header{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.course-item .co-main .co-avatar{
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+}
+.course-item .co-main .co-date{
+    font-size: 12px;
+    color: #333;
+    padding: 10px 0;
+}
+.course-item .co-main .co-info{
+    font-size: 18px;
+    line-height: 25px;
+    color: #333;
+}
+.course-item .co-main .co-info span{
+   display: inline-block;
+    background: #F5F5F5;
+    border-radius: 5px;
+    line-height: 25px;
+    font-size: 12px;
+    height: 25px;
+    padding: 0 5px;
+    color: #aaa;
+    vertical-align: middle;
+}
+.recommend .co-btn{
+    padding-top: 15px;
+}
+.recommend .co-btn span{
+    display: inline-block;
+    background: #00a0e9;
+    border-radius: 5px;
+    line-height: 30px;
+    font-size: 16px;
+    height: 30px;
+    padding: 3px 3px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.recommend .co-btn  .co-btn-full{
+    background: #ccc;
+    color: #eee;
+}
+
+.shadow {
+    margin-bottom: 10px;
+    overflow: hidden;
+	display: block;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.index-sort {}
+.index-sort .line {
+    border-right: 1px solid #e6e6e6;
+}
+.index-sort .link {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ico {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    -webkit-background-size: contain!important;
+    background-size: contain!important;
+}
+.ico-my-courses {
+	margin-right: 10px;
+	width: 36px;
+	height: 38px;
+    background: url(//res.umojia.cn/images/ico-my-courses.png) no-repeat;
+}
+
+.ico-sort{
+	margin-right: 10px;
+	width: 36px;
+	height: 38px;
+	background:url(//res.umojia.cn/images/ico-sort.png) no-repeat
+}
+
+
+.details {
+    min-height: 100%;
+    padding-bottom: 80px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.details-tab {
+    position: relative;
+    border-top: 1px solid #e6e6e6;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+.details-tab li {
+    float: left;
+    width: 33.333%;
+}
+.details-tab {
+	position:relative;
+	border-top:1px solid #e6e6e6;
+	background-color:#fff;
+	overflow:hidden
+}
+.details-tab.fixed {
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:100;
+	width:100%
+}
+.details-tab li {
+	float:left;
+	width:33.333%
+}
+.details-tab li:last-child {
+	width:33.334%
+}
+.details-tab a {
+	display:block;
+	line-height:38px;
+	font-size: 26px;
+    font-weight: 600;
+    color: #666;
+    height: 45px;
+
+	text-align:center;
+	border-bottom:1px solid #e6e6e6
+}
+.details-tab .cur a {
+	position:relative;
+	color:#EF4444;
+	border-color:#EF4444
+}
+.details-con {
+}
+.details-list {
+}
+.details-list .item {
+	margin:0 10px;
+	border-bottom:1px solid #e3e3e3;
+	overflow:hidden
+}
+.details-list .item:last-child {
+	border-bottom:0
+}
+.d-list-title {
+	padding: 12px  5px  5px;
+	font-size: 15px;
+	color:#666
+}
+.d-list-directory {
+	font-size: 14px;
+	color:#999
+}
+.d-list-directory li {
+	position:relative;
+	padding: 0  5px 1px 13px;
+	height:100%;
+	color:#999;
+	overflow:hidden
+}
+.d-list-directory li a {
+	color:#999
+}

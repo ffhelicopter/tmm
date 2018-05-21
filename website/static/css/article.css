@@ -1,0 +1,96 @@
+.article-main{
+    margin-top: 40px;
+    background: #f8f8f8;
+}
+.article-img{
+    position: relative;
+}
+.article-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.article-img span{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 34px;
+    line-height: 34px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0 15px 0 10px;
+    background: rgba(0,0,0,.7);
+    border-radius: 0 17px 17px 0;
+    text-shadow: 0 0 1px rgba(0,0,0,.8);
+}
+
+.article-name{
+    padding: 15px;
+    font-size: 24px;
+    line-height: 30px;
+    background: #fff;
+}
+.article-author{
+    padding: 10px 15px;
+    background: #fff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+/*
+.article-author .author-avatar{
+    position: relative;
+}
+.article-author .author-avatar img{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #F5F5F5;
+    border-radius: 50%;
+}
+.article-author .author-avatar .vip{
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    color: #9266f9;
+    color: #EF4444;
+    background: #fff;
+    font-size: 14px;
+    border:1px  solid #FFF;
+	 border-radius: 50%;
+}
+*/
+.article-author .author-main{
+    padding: 0 5px;
+}
+.article-author .author-main .author-name{
+
+}
+.article-author .author-main .author-name p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.article-author .author-main .author-info{}
+.article-author .author-main .author-info p{
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+}
+.article-author  .author-btn{
+    padding: 2px 5px;
+    height: 20px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+.article-author  .author-btn .icon{
+    font-size: 20px;
+    color: #666;
+    float: left;
+}
+.article-author  .author-btn span{
+    float: left;
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+}
+/*赞*/

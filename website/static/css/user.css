@@ -1,0 +1,86 @@
+.user{
+    padding-top: 40px;
+}
+.user-avatar{
+    padding: 50px 0 0;
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+.user-avatar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.user-avatar .icon{
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    color: #9266f9;
+    color: #EF4444;
+    background: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.user-name{
+    padding: 0 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.user-num{
+    padding: 10px 0;
+}
+.user-num .flex-1{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+.user-info{
+    padding: 0 15px 30px;
+}
+.user-info p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+.user-tab{
+    padding: 0 15px;
+    background: #F5F5F5;
+}
+.user-tab .flex-1{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    line-height: 40px;
+}
+.user-tab .flex-1.active{
+    /*font-weight: bold;*/
+    color: #fff;
+    background: #000;
+}
+.user-show{
+    padding: 10px 10px 0 0;
+}
+.user-show ul{
+    padding-left: 10px;
+}
+.user-show ul li{
+    padding-bottom: 15px;
+}
+.user-show .u-img img{
+    width: 100%;
+}
+.user-show .u-title{
+    display: block;
+    line-height: 20px;
+    height: 20px;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 5px;
+}

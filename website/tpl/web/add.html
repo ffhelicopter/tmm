@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{template "header" .}}
+<link rel="stylesheet" href="/public/css/add.css">
+</head>
+<body>
+
+<header class="top-bar">
+	<a href="{$back}" class="top-bar-back">
+		<svg class="icon" aria-hidden="true">
+			<use xlink:href="#icon-back"></use>
+		</svg>
+	</a>
+	<div class="top-bar-main">发帖子</div>
+	<span class="top-btn" style="cursor: pointer;">完成</span>
+</header>
+
+<!--login-->
+<section class="add">
+	<form class="add_form" name="addform" id="addform" enctype="multipart/form-data">
+		<textarea class="textarea" name="intro" placeholder="亲，说两句吧！"></textarea>
+		<div class="add-img">
+			<ul class="display_ul">
+				<li id="add_img">
+					<label for="uploadImg">
+						<div class="add-photo">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-add"></use>
+							</svg>
+						</div>
+						<input id="uploadImg" name="uploadImg[]" type="file" accept="image/*" style="display: none;" multiple>
+					</label>
+				</li>
+			</ul>
+		</div>
+	<input name="token" type="hidden" value={{ .token }}>
+	</form>
+	<ul class="none_li" style="display: none;">
+		<li>
+			<img src="" alt="" width="100%" height="100%">
+			<input name="image[0]" class="images_data" type="hidden">
+			<span class="delete-img" style="cursor: pointer;">
+				<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+			</span>
+		</li>
+	</ul>
+</section>
+<script src="/public/lib/layer_mobile/layer.js"></script>
+<script type="text/javascript">
+	var input_count = 0;
+	$("#uploadImg").change(function() {
+		if (!FileReader) {
+			return false;
+		}
+		var reader = new FileReader(),
+			file = this.files[0];
+		if (file.size  >= 2097152) {
+			layer.open({
+			  	content: '图片应小于2M' + file.size,
+			  	btn: '好的',
+			  	shadeClose: false
+			});
+			return false;
+		}
+		if (file.type.indexOf("image") != 0) {
+			layer.open({
+			  	content: '请选择图片',
+			  	btn: '好的',
+			  	shadeClose: false
+			});
+			return false;
+		}
+		reader.onload = function(e) {
+
+			var count = $(".display_ul li").length;
+			$(".none_li li input").attr("name", "image[" + input_count + "]");
+			$(".none_li li input").val(e.target.result);
+			$(".none_li li img").attr("src", e.target.result);
+			if (count == 6) {
+				$("#add_img").hide();
+			}
+			var li_str = $(".none_li").clone();
+			$("#add_img").before(li_str.html());
+			input_count = input_count + 1;
+		};
+		reader.readAsDataURL(file);
+	});
+
+	var todo = true;
+	$(".top-btn").click(function(){
+		if (todo == false) {
+			return false;
+		}
+
+		todo = false;
+
+		//var fileObj = document.getElementById("uploadImg").files[0]; // js 获取文件对象
+		var count = $(".display_ul li").length;
+		if (count < 2) {
+			alert("至少一张图片");
+			return false;
+		}
+		if (count > 7) {
+			alert("最多六张图片");
+			return false;
+		}
+       
+		var form = document.getElementById("addform");
+        var fm = new FormData(form);
+				
+		$.ajax(
+			{
+				url: '/postme.html',
+				type: 'POST',
+				data: fm,
+				contentType: false, //禁止设置请求类型
+				processData: false, //禁止jquery对DAta数据的处理,默认会处理
+				//禁止的原因是,FormData已经帮我们做了处理
+				success: function (result) {
+					//测试是否成功
+					//但需要你后端有返回值
+					alert(result);
+					window.location.href = "/index.html";
+				}
+			}
+		);
+
+
+
+		/*
+				var count = $(".display_ul li").length;
+		if (count < 2) {
+			alert("至少一张图片");
+			return false;
+		}
+		if (count > 7) {
+			alert("最多六张图片");
+			return false;
+		}
+
+		$.post("/postme.html", $(".add_form"), function(json){
+			if (json.status == "y") {
+				alert("发帖子成功");
+
+				window.location.href = "/index.html";
+			} else {
+				alert("发帖子失败");
+				todo = true;
+			}
+		}, 'json');
+		*/
+	});
+
+	//删除选中图片
+	$(document).on('click', '.delete-img', function() {
+		$(this).parent().remove();
+		$("#add_img").show();
+	})
+</script>
+
+</body>
+</html>

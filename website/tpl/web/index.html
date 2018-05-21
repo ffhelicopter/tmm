@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{template "header" .}}
+</head>
+<body>
+
+<!--导航-->
+<div class="feeds">
+    <div class="top-nav">
+    	<a href="/index.tml" class="active">欣赏</a>
+    	<a href="/add.html" class="add-btn">
+    		<svg class="icon" aria-hidden="true">
+    			<use  xlink:href="#icon-add"></use>
+    		</svg>
+    		发布
+    	</a>
+    </div>
+	<input type="hidden" id="showmore" value="{$showmore}">
+	<input type="hidden" id="page" value="{$page}">
+    <!--</div>-->
+</div>
+<script type="text/javascript">
+	var done = true;
+	$(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        var scrollHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var showmore = $("#showmore").val();
+        if(scrollTop + windowHeight + 300 >= scrollHeight && showmore == 1 && done){
+        	var page = $("#page").val();
+        	done = false;
+	        $.get("{:U('Product/listsAjax')}", { page : page }, function(json) {
+	        	if (json.rs != "") {
+	        		$(".feeds").append(json.rs);
+	        		$("#showmore").val(json.showmore);
+	        		$("#page").val(json.page);
+	        		done = true;
+	        	}
+	        },'json');
+        }
+    });
+</script>
+    <script src="//at.alicdn.com/t/font_ttszo9rnm0wwmi.js"></script>
+</body>
+</html>
