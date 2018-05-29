@@ -1,24 +1,24 @@
 # tmm
 快速搭建WEB站点以及提供RestFull接口 。
 
-###一：静态资源站点
+## 一：静态资源站点
 
 	
 
-```go
-router := gin.Default()
+``` go
+	router := gin.Default()
 
 	// 静态资源加载，本例为css,js以及资源图片
 	router.StaticFS("/public", http.Dir("D:/goproject/src/github.com/ffhelicopter/tmm/website/static"))
 	router.StaticFile("/favicon.ico", "./resources/favicon.ico")
 ```
 
-###二：动态站点
+## 二：动态站点
 模板可调用静态资源站点的css，图片等
 
 	
 
-```go
+``` go
 // 导入所有模板，多级目录结构需要这样写
 	router.LoadHTMLGlob("website/tpl/*/*")
 	
@@ -32,12 +32,12 @@ router := gin.Default()
 	}
 ```
 
-###三：中间件的使用，在API中可能使用限流，身份验证等
+## 三：中间件的使用，在API中可能使用限流，身份验证等
 
 
 	
 
-```go
+``` go
 	// 中间件 golang的net/http设计的一大特点就是特别容易构建中间件。
 	// gin也提供了类似的中间件。需要注意的是中间件只对注册过的路由函数起作用。
 	// 对于分组路由，嵌套使用中间件，可以限定中间件的作用范围。大致分为全局中间件，单个路由中间件和群组中间件。
@@ -58,11 +58,11 @@ router := gin.Default()
 	//tollbooth.LimitByKeys(lmt, []string{"127.0.0.1", "/"})
 ```
 
-四：RestFull API接口
+## 四：RestFull API接口
 
 	
 
-```go
+``` go
 // API分组(RESTFULL)以及版本控制
 	v1 := router.Group("/v1")
 	{
