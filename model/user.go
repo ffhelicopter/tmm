@@ -1,4 +1,4 @@
-// model 是专门提供Restfull接口的路由请求处理handler
+// model 是专门提供RESTful接口的路由请求处理handler
 // 可以使用gorm等ORM工具来处理。为了代码简洁，这里使用原生sql处理。
 // 用户数据处理
 package model

@@ -1,4 +1,4 @@
-// api 是专门提供Restfull接口的路由请求处理handler
+// api 是专门提供RESTful接口的路由请求处理handler
 // 除了GET方法，也支持POST,PUT,DELETE,OPTION等常用的restful方法
 
 package api
