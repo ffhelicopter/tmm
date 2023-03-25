@@ -1,0 +1,8 @@
+# IDE
+.idea
+
+# Compiled object files, static and dynamic libs (shared objects)
+*.o
+*.a
+*.so
+*.exe
